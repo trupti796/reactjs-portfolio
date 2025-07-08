@@ -6,22 +6,23 @@ const skills = [
   // Frontend
   { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
+  { name: "ReactJS", level: 90, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "Bootstrap", level: 90, category: "frontend" },
+  { name: "JQuery", level: 90, category: "frontend" },
+  { name: "Javascript", level: 90, category: "frontend" },
+  { name: "AJAX", level: 90, category: "frontend" },
+  { name: "Ionic App", level: 90, category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Node.js", level: 40, category: "backend" },
+  { name: "PHP", level: 80, category: "backend" },
+  { name: "MYSQL", level: 70, category: "backend" },
+  { name: "Laravel", level: 65, category: "backend" },
+  { name: "Codeigniter", level: 90, category: "backend" },
 
   // Tools
   { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
 ];
 const categories = ["all", "frontend", "backend", "tools"];

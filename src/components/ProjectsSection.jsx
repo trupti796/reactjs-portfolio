@@ -3,34 +3,33 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Car Configurator",
+    description: "Customize car models and features in an interactive UI.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
+    tags: ["ReactJS", "TailwindCSS","HTML"],
+    demoUrl: "https://projects.emaginationz.net/lusso-car-configurator/",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+    title: "HRMS",
+    description: "Manage employee tasks, attendance, leaves, and resources.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
+    tags: ["Codeigniter", "php", "MySql", "HTML", "CSS", "Bootstrap", "Javascript", "JQuery", "AJAX"],
+    demoUrl: "https://projects.emaginationz.net/pms_v2",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+    title: "Lead Management System",
+    description: "Track and manage leads with CRM features for businesses.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
+    tags: ["Laravel", "php", "MySql", "HTML", "CSS", "Bootstrap", "Javascript", "JQuery", "AJAX"],
+    demoUrl: "https://crm.emaginationz.net/admin-login",
     githubUrl: "#",
   },
 ];
+
 
 export const ProjectsSection = () => {
   return (
