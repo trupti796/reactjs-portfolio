@@ -22,41 +22,41 @@ export const ContactSection = () => {
     setIsSubmitting(true);
 
     fetch("http://localhost:5000/api/send-email", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    name: e.target.name.value,
-    email: e.target.email.value,
-    message: e.target.message.value,
-  }),
-})
-  .then((res) => res.json())
-  .then((data) => {
-    if (data.success) {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: e.target.name.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          toast({
+            title: "Message sent!",
+            description: "Thank you for your message. I'll get back to you soon.",
+          });
+          e.target.reset();
+        } else {
+          toast({
+            title: "Error",
+            description: data.message || "Something went wrong.",
+          });
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        toast({
+          title: "Network Error",
+          description: "Unable to send message. Try again later.",
+        });
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-      e.target.reset();
-    } else {
-      toast({
-        title: "Error",
-        description: data.message || "Something went wrong.",
-      });
-    }
-  })
-  .catch((error) => {
-    console.error(error);
-    toast({
-      title: "Network Error",
-      description: "Unable to send message. Try again later.",
-    });
-  })
-  .finally(() => {
-    setIsSubmitting(false);
-  });
 
   };
   return (
