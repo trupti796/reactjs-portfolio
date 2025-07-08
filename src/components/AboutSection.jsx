@@ -79,10 +79,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">Backend Development</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    Creating REST APIs and handling server-side logic with PHP, Laravel, and Node.js.
                   </p>
                 </div>
               </div>
